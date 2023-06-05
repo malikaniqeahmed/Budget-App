@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styal.css">
+    <title> Check Your Budget</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="mainForm">
+        <div class="formPage">
+            <form class="row g-3">
+                <div class="col-12">
+                    <label class="form-label">Due Date</label>
+                    <input type="date" class="form-control" id="inputduedate" placeholder="">
+                </div>
+                <div class="col-lg-3">
+                    <label class="form-label">Total Amount</label>
+                    <input type="number" class="form-control" id="inputexpenseamount">
+                </div>
+                <div class="col-lg-3">
+                    <label class="form-label">Amount (exct. tax)</label>
+                    <input type="number" class="form-control" id="inputtaxamt">
+                </div>
+                <div class="col-12">
+                    <label class="form-label">Categorie</label>
+                    <select id="dropDownMenu" class="form-select">
+                        <option>....</option>
+                        <option value="restaurants">Restaurants & Cafe</option>
+                        <option value="grocery">Grocery & Medical</option>
+                        <option value="clothes">Clothes & Jewlery</option>
+                        <option value="credit">Loan & Credit</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label class="form-label">Discription</label>
+                    <input type="text" class="form-control" id="inputdiscription">
+                </div>
+                <div class="col-12">
+                    <label class="form-label">Payment Date</label>
+                    <input type="date" class="form-control" id="inputpaydate">
+                </div>
+                </label>
+                <div class="col-12">
+                </div>
+            </form>
+            <button type="reset" class="homeBTN" onclick="history.back()">
+                <a>
+                    Back to Home
+                </a>
+            </button>
+            <button type="submit" class="mainBTN2" id="addExpenseBtn">Add Expense </button>
+        </div>
+        <div class="budgetCalculator">
+            <div class="budgetSection">
+                <div class="budgetCalculatorSection">
+                    <div>
+                        <h4 class="fw-bold">
+                            Budget
+                        </h4>
+                    </div>
+                    <div>
+                        <h5 id="finalBudget">
+
+                        </h5>
+                    </div>
+                </div>
+                <div class="budgetCalculatorSection">
+                    <div>
+                        <h4 class="fw-bold">
+                            Expenses
+                        </h4>
+                    </div>
+                    <div>
+                        <h5 id="totalExpense">
+
+                        </h5>
+                    </div>
+                </div>
+                <div class="budgetCalculatorSection">
+                    <h4 class="fw-bold">
+                        Balance
+                    </h4>
+                    <div>
+                        <h5 id="remainingbalance">
+
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tableSection">
+        <div class="w-75">
+            <table class="table table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>TaxAmount</th>
+                        <th>Due Date</th>
+                        <th>Pay Date</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-table-body" class="tableBoday">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+<script src="./form.js"></script>
+
+</html>

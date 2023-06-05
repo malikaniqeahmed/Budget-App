@@ -1,0 +1,180 @@
+body {
+    font-family: sans-serif;
+    font-weight: 700;
+    background: linear-gradient(to left,
+            rgb(42, 192, 172),
+            rgb(21, 143, 127),
+            rgb(161, 25, 161));
+}
+
+
+.cateCard {
+    background-color: rgb(216, 213, 213);
+    border-radius: 10px;
+    width: 700px;
+    margin-bottom: 50px;
+}
+
+.groceryCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.cardInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.cateText {
+    font-size: larger;
+    font-weight: 600;
+}
+
+
+.mainBTN {
+    border: 1px solid rgb(161, 25, 161);
+    background-image: linear-gradient(to left, rgb(42, 192, 172),
+            rgb(161, 25, 161));
+
+    padding: 10px 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 100% auto;
+    color: #D8D5D5;
+    box-shadow: 0 0 20px #8a8a8a;
+    border-radius: 10px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.mainBTN:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mainDiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.budgetCard {
+    background-color: #D8D5D5;
+    padding: 50px 70px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formPage {
+    background-color: #D8D5D5;
+    width: 50%;
+    padding: 2%;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.budgetCalculator {
+    width: 17%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #D8D5D5;
+}
+
+.budgetCalculatorSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+}
+
+.homeBTN {
+    border: 1px solid rgb(161, 25, 161);
+    background-image: linear-gradient(to right, rgb(42, 192, 172),
+            rgb(161, 25, 161));
+
+    padding: 10px 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 100% auto;
+    color: #D8D5D5;
+    box-shadow: 0 0 20px #8a8a8a;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.homeBTN:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.homeBTN a {
+    color: #D8D5D5;
+    text-decoration: none;
+}
+
+.btnClass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+}
+
+.budgetOuter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.budgetSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.mainBTN2 {
+    border: 1px solid rgb(161, 25, 161);
+    background-image: linear-gradient(to left, rgb(42, 192, 172),
+            rgb(161, 25, 161));
+
+    padding: 10px 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 100% auto;
+    color: #D8D5D5;
+    box-shadow: 0 0 20px #8a8a8a;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.mainBTN2:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
